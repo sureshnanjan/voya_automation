@@ -1,0 +1,96 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415101818
+Username: SURESHNANJAN\nanja
+RunAs User: SURESHNANJAN\nanja
+Configuration Name: 
+Machine: SURESHNANJAN (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2108
+PSVersion: 5.1.26100.7920
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.7920
+BuildVersion: 10.0.26100.7920
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is suresh.log
+PS C:\Trainings-2025\Vendors\edforce> New-Item -Path C:\Trainings-2025\Vendors\edforce -Name QA-Training
+
+
+    Directory: C:\Trainings-2025\Vendors\edforce
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        15-04-2026     10:19              0 QA-Training
+
+
+PS C:\Trainings-2025\Vendors\edforce> New-Item -Path C:\Trainings-2025\Vendors\edforce -Name QA-Training -ItemType Directory
+New-Item : An item with the specified name C:\Trainings-2025\Vendors\edforce\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path C:\Trainings-2025\Vendors\edforce -Name QA-Training -I ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Trainings-20...rce\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name
+C:\Trainings-2025\Vendors\edforce\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path C:\Trainings-2025\Vendors\edforce -Name QA-Training -I ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Trainings-20...rce\QA-Training:St
+   ring) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemC
+   ommand
+
+PS C:\Trainings-2025\Vendors\edforce> New-Item -Path C:\Trainings-2025\Vendors\edforce -Name QA-Training -ItemType Directory
+
+
+    Directory: C:\Trainings-2025\Vendors\edforce
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15-04-2026     10:20                QA-Training
+
+
+PS C:\Trainings-2025\Vendors\edforce> git --version
+
+PS C:\Trainings-2025\Vendors\edforce> git clone https://github.com/sureshnanjan/voya_automation.git
+
+PS C:\Trainings-2025\Vendors\edforce> Set-Location .\voya_automation\
+PS C:\Trainings-2025\Vendors\edforce\voya_automation> dir
+
+
+    Directory: C:\Trainings-2025\Vendors\edforce\voya_automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        15-04-2026     10:24          11558 LICENSE
+-a----        15-04-2026     10:24             66 README.md
+
+
+PS C:\Trainings-2025\Vendors\edforce\voya_automation> git status
+
+PS C:\Trainings-2025\Vendors\edforce\voya_automation> git checkout -b suresh-trainer
+
+PS C:\Trainings-2025\Vendors\edforce\voya_automation> dir
+
+
+    Directory: C:\Trainings-2025\Vendors\edforce\voya_automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        15-04-2026     10:24          11558 LICENSE
+-a----        15-04-2026     10:24             66 README.md
+
+
+PS C:\Trainings-2025\Vendors\edforce\voya_automation> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260415102614
+**********************
