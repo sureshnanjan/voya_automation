@@ -1,0 +1,129 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415110343
+Username: DSGLOBAL\i736969
+RunAs User: DSGLOBAL\i736969
+Configuration Name: 
+Machine: WXVDSKFPX21115 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 25796
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Shreyas.log
+PS C:\Users\i736969\Playwright Training> New-Item -Path C:\Users\i736969\ -Name ‘QA-Training’ -ItemType Directory 
+
+
+    Directory: C:\Users\i736969
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04/15/2026  11:05 AM                QA-Training
+
+
+PS C:\Users\i736969\Playwright Training> Set-Location C:\Users\i736969\QA-Training
+PS C:\Users\i736969\QA-Training> git --version  
+git version 2.18.0.windows.1
+PS C:\Users\i736969\QA-Training> .\git-installer.exe /VERYSILENT /NORESTART 
+.\git-installer.exe : The term '.\git-installer.exe' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ .\git-installer.exe /VERYSILENT /NORESTART
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\git-installer.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+.\git-installer.exe : The term '.\git-installer.exe' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ .\git-installer.exe /VERYSILENT /NORESTART
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (.\git-installer.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\i736969\QA-Training> git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+PS C:\Users\i736969\QA-Training> git clone https://github.com/Shreyas/voya_automation.git
+Cloning into 'voya_automation'...
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': No error
+PS C:\Users\i736969\QA-Training> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\i736969\QA-Training> git clone https://github.com/Shreyas/voya_automation.git
+Cloning into 'voya_automation'...
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': fatal: could not read Username for 'https://github.com': No error
+PS C:\Users\i736969\QA-Training> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\i736969\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), done.
+PS C:\Users\i736969\QA-Training> Set-Location voya_automation
+PS C:\Users\i736969\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\i736969\QA-Training\voya_automation> git checkout -b Shreyas-branch  
+Switched to a new branch 'Shreyas-branch'
+PS C:\Users\i736969\QA-Training\voya_automation> git status
+On branch Shreyas-branch
+nothing to commit, working tree clean
+PS C:\Users\i736969\QA-Training\voya_automation> Stop-Transcript 
+**********************
+Windows PowerShell transcript end
+End time: 20260415111858
+**********************
