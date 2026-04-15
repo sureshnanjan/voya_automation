@@ -1,0 +1,125 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415102232
+Username: DSGLOBAL\i727579
+RunAs User: DSGLOBAL\i727579
+Configuration Name: 
+Machine: WXVDSKFPX41624 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14872
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is pooja.log
+PS C:\users\i727579\Playwright_Training> New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType Directory
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType  ...
++                ~
+The '<' operator is reserved for future use.
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name ‘QA-Training’ -ItemType  ...
++                ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\users\i727579\Playwright_Training> New-Item -Path <path/to/workingfolder> -Name QA-Training -ItemType Directory
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name QA-Training -ItemType Di ...
++                ~
+The '<' operator is reserved for future use.
+At line:1 char:16
++ New-Item -Path <path/to/workingfolder> -Name QA-Training -ItemType Di ...
++                ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\users\i727579\Playwright_Training> New-Item -Path C:\Users\i727579\Playwright_Training -Name QA-Training -ItemType Directory
+
+
+    Directory: C:\Users\i727579\Playwright_Training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/15/2026  10:26 AM                QA-Training
+
+
+PS C:\users\i727579\Playwright_Training> Set-Location C:\Users\i727579\Playwright_Training\QA-Training
+PS C:\Users\i727579\Playwright_Training\QA-Training> git --version
+git version 2.18.0.windows.1
+PS C:\Users\i727579\Playwright_Training\QA-Training> git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+PS C:\Users\i727579\Playwright_Training\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), done.
+PS C:\Users\i727579\Playwright_Training\QA-Training> Set-Location voya_automation
+PS C:\Users\i727579\Playwright_Training\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\i727579\Playwright_Training\QA-Training\voya_automation> git chekout -b pooja-branch
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS C:\Users\i727579\Playwright_Training\QA-Training\voya_automation> git checkout -b pooja-branch
+Switched to a new branch 'pooja-branch'
+PS C:\Users\i727579\Playwright_Training\QA-Training\voya_automation> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260415104343
+**********************
