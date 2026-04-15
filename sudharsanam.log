@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415121237
+Username: DSGLOBAL\i736835
+RunAs User: DSGLOBAL\i736835
+Configuration Name: 
+Machine: WXVDSKFPX23113 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 1036
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sudharsanam.log
+PS C:\Trainings\WorkingFolder> New-Item -Path C:\Trainings\WorkingFolder\ -Name QA-Training -ItemType Directory
+
+
+    Directory: C:\Trainings\WorkingFolder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04/15/2026  12:16 PM                QA-Training
+
+
+PS C:\Trainings\WorkingFolder> Set-Location C:\Trainings\WorkingFolder\QA-Training
+PS C:\Trainings\WorkingFolder\QA-Training> git --version
+git version 2.45.1.windows.1
+PS C:\Trainings\WorkingFolder\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), 5.89 KiB | 1.96 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+PS C:\Trainings\WorkingFolder\QA-Training> Set-Location voya_automation
+PS C:\Trainings\WorkingFolder\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Trainings\WorkingFolder\QA-Training\voya_automation> git checkout -b sudharsanam-branch
+Switched to a new branch 'sudharsanam-branch'
+PS C:\Trainings\WorkingFolder\QA-Training\voya_automation> git status
+On branch sudharsanam-branch
+nothing to commit, working tree clean
+PS C:\Trainings\WorkingFolder\QA-Training\voya_automation> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260415122105
+**********************
