@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415102326
+Username: DSGLOBAL\i732218
+RunAs User: DSGLOBAL\i732218
+Configuration Name: 
+Machine: WXVDSKFPX23363 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 10120
+PSVersion: 5.1.22621.5624
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.5624
+BuildVersion: 10.0.22621.5624
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sridevi.log
+PS H:\> New-Item -Path H:\Playwright_Automation_course -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: H:\Playwright_Automation_course
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04/15/2026  10:57 AM                QA-Training
+
+
+PS H:\> Set-Location H:\Playwright_Automation_course\QA-Training
+PS H:\Playwright_Automation_course\QA-Training> git --version
+git version 2.45.1.windows.1
+PS H:\Playwright_Automation_course\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), 5.89 KiB | 23.00 KiB/s, done.
+Resolving deltas: 100% (1/1), done.
+PS H:\Playwright_Automation_course\QA-Training> Set-Location voya_automation
+PS H:\Playwright_Automation_course\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS H:\Playwright_Automation_course\QA-Training\voya_automation> git checkout -b sridevi-branch
+Switched to a new branch 'sridevi-branch'
+PS H:\Playwright_Automation_course\QA-Training\voya_automation> git status
+On branch sridevi-branch
+nothing to commit, working tree clean
+PS H:\Playwright_Automation_course\QA-Training\voya_automation> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260415111144
+**********************
