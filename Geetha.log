@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260416105156
+Username: DSGLOBAL\i727364
+RunAs User: DSGLOBAL\i727364
+Configuration Name: 
+Machine: WXVDSKFPX23142 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16176
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Geetha.log
+PS H:\> New-Item -Path C:\Users\i727364\PlaywrightTarining -Name 'QA-Training' ItemType Directory
+PS H:\> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument 'ItemType'."
+New-Item : A positional parameter cannot be found that accepts argument 'ItemType'.
+At line:1 char:1
++ New-Item -Path C:\Users\i727364\PlaywrightTarining -Name 'QA-Training ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument 'ItemType'.
+At line:1 char:1
++ New-Item -Path C:\Users\i727364\PlaywrightTarining -Name 'QA-Training ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS H:\> New-Item -Path C:\Users\i727364\PlaywrightTarining -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\i727364\PlaywrightTarining
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/16/2026  10:55 AM                QA-Training
+
+
+PS H:\> Set-Location C:\Users\i727364\PlaywrightTarining\QA-Training
+PS C:\Users\i727364\PlaywrightTarining\QA-Training> git --version
+git version 2.18.0.windows.1
+PS C:\Users\i727364\PlaywrightTarining\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 39, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (35/35), done.
+remote: Total 39 (delta 12), reused 26 (delta 3), pack-reused 0 (from 0)
+Unpacking objects: 100% (39/39), done.
+PS C:\Users\i727364\PlaywrightTarining\QA-Training> Set-Location voya_automation
+PS C:\Users\i727364\PlaywrightTarining\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\i727364\PlaywrightTarining\QA-Training\voya_automation> git checkout -b Geetha-branch 
+Switched to a new branch 'Geetha-branch'
+PS C:\Users\i727364\PlaywrightTarining\QA-Training\voya_automation> git status
+On branch Geetha-branch
+nothing to commit, working tree clean
+PS C:\Users\i727364\PlaywrightTarining\QA-Training\voya_automation> Stop-Transcript 
+**********************
+Windows PowerShell transcript end
+End time: 20260416110042
+**********************
