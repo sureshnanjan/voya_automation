@@ -20,4 +20,4 @@ let kumar:Employee = {job:"tester", name:"kumar", Age:50}
 
 //HomePageDetails.notexisting
 
-console.log(Suresh.Age)
+console.log(Suresh.Age) // Updatng
