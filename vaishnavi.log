@@ -1,0 +1,78 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260415011903
+Username: DSGLOBAL\i722106
+RunAs User: DSGLOBAL\i722106
+Configuration Name: 
+Machine: WXVDSKFPX23460 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 26440
+PSVersion: 5.1.22621.6345
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6345
+BuildVersion: 10.0.22621.6345
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is vaishnavi.log
+PS C:\edForce_Playwright_Training> New-Item -Path C:\edForce_Playwright_Training\WorkingFolder -Name QA-Training -ItemType Directory 
+
+
+    Directory: C:\edForce_Playwright_Training\WorkingFolder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        04/15/2026   1:23 AM                QA-Training
+
+
+PS C:\edForce_Playwright_Training> Set-Location C:\edForce_Playwright_Training\WorkingFolder \QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location C:\edForce_Playwright_Training\WorkingFolder \QA-Trainin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location C:\edForce_Playwright_Training\WorkingFolder \QA-Trainin ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\edForce_Playwright_Training> Set-Location C:\edForce_Playwright_Training\WorkingFolder\QA-Training
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training> git -version
+unknown option: -version
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training> git --version
+git version 2.18.0.windows.1
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training> git clone https://github.com/sureshnanjan/voya_automation.git
+Cloning into 'voya_automation'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 1), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), done.
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training> Set-Location voya_automation
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training\voya_automation> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training\voya_automation> git checkout -b vaishnavi-branch 
+Switched to a new branch 'vaishnavi-branch'
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training\voya_automation> git status
+On branch vaishnavi-branch
+nothing to commit, working tree clean
+PS C:\edForce_Playwright_Training\WorkingFolder\QA-Training\voya_automation> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260415013046
+**********************
