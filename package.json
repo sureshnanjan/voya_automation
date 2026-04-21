@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "ansi-color": "^0.2.2"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5"
   }
 }
