@@ -1,0 +1,16 @@
+{
+  "name": "voya_automation",
+  "version": "1.0.0",
+  "description": "Thraining for Palywright autoinnmartion",
+  "main": "HelloWorls-TS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "suresh": "dir",
+    "color": "node without-color.js"
+  },
+  "author": "Suresh Nanjan",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-color": "^0.2.2"
+  }
+}
