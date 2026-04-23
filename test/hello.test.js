@@ -10,7 +10,7 @@ import HomePageOperation from "../src/operations/home_page_operations";
    // - Banner Text
 describe("Heroku App", function () {
   describe("Home Page", function () {
-    let homePageOperation: HomePageOperation;
+    let homePageOperation;//: HomePageOperation;
     it("Title Check is OK", function () {
       /// AAA - Arrange Act Assert
       const expectedTitle = "Welcome to Internet";
