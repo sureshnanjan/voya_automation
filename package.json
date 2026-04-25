@@ -1,0 +1,21 @@
+{
+  "name": "voya_automation",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Thraining for Palywright autoinnmartion",
+  "main": "HelloWorls-TS.js",
+  "scripts": {
+    "suresh": "dir",
+    "color": "node without-color.js"
+  },
+  "author": "Suresh Nanjan",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-color": "^0.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "mocha": "^11.7.5"
+  }
+}
