@@ -34,3 +34,20 @@ test('Home Page Check for Fish Category is Correct', async ({ page }) => {
 
 });
 
+test('Sign In - Verify username and password fields are present and login link exist', async ({ page }) => {
+    //AAA - Arrange Act Assert
+    const expectedUsername = "demoTest";
+    const expectedPassword = "Password#1";
+    // Launch Petstore
+    const psPage: PSHomePageOperations;
+    // Act - Click on Sign In link
+    const signInPage = psPage.clickSignIn();
+    // Assert - Verify username and password fields are present
+    signInPage.isUsernameFieldPresent().should.equal(true);
+    signInPage.isPasswordFieldPresent().should.equal(true);
+    signInPage.isLoginButtonPresent().should.equal(true);
+    // Act - Enter credentials and click Login
+    signInPage.enterUsername(expectedUsername);
+    signInPage.enterPassword(expectedPassword);
+    signInPage.clickLogin();
+});

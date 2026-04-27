@@ -6,11 +6,21 @@ export interface PSHomePageOperations {
    getCenterImageItems: () => string[];
    // Actions on Home Page
    visitCategory(catgegoryname: string): CatItems[];
+   clickSignIn(): SignInPageOperations;
 
 
 }
+
+export interface SignInPageOperations {
+   isUsernameFieldPresent(): boolean;
+   isPasswordFieldPresent(): boolean;
+   isLoginButtonPresent(): boolean;
+   enterUsername(username: string): void;
+   enterPassword(password: string): void;
+   clickLogin(): void;
+}
 // POJO - Plain Old JavaScript Object
-type PSLogo{
+type PSLogo = {
     imagesrc: string;
     imagehelpstring: string;
     position: string;
@@ -18,7 +28,7 @@ type PSLogo{
     font: string;
 }
 
-type CatItems{
+type CatItems = {
     prod_id:string
     prod_name:string
 
