@@ -89,6 +89,6 @@ let birdsUser: User = { id: 722106, username: "Pet_Store_1", firstName: "Jhone",
 
 console.log(fish.id, fish.name)
 console.log(dog.category.name, dog.status)
-console.log(reptiles.photoUrls[0], reptiles.tags?.[0]?.name)
+console.log(reptiles.photoUrls[0], reptiles.tags[0].name)
 console.log(cat)
 console.log(birds.name, birds.id, birds.status, birds.tags[0])
