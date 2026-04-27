@@ -1,0 +1,5 @@
+{
+    "url": "https://the-internet.herokuapp.com/",
+    "timeout": 5000,
+    "browsers": ["chromium", "firefox", "chromium-headless"]
+}
