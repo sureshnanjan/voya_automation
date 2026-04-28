@@ -8,6 +8,12 @@ export interface PSHomePageOperations {
    visitCategory(catgegoryname: string): CatItems[];
 
 
+    // Clicks the sign-in link on the home page
+    clickSignInLink(): void;
+ 
+    // Checks if the username/password prompt is visible on the sign-in page
+    isSignInPromptVisible(): Boolean;
+
 }
 // POJO - Plain Old JavaScript Object
 type PSLogo{
