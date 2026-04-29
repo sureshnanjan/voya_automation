@@ -2,9 +2,10 @@
   "name": "voya_automation",
   "version": "1.0.0",
   "type": "module",
-  "description": "Thraining for Palywright autoinnmartion",
+  "description": "Training for Playwright automation",
   "main": "HelloWorls-TS.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "suresh": "dir",
     "color": "node without-color.js"
   },
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
-    "mocha": "^11.7.5"
+    "mocha": "^11.7.5",
+    "typescript": "^6.0.3"
   }
 }
